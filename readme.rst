@@ -3,7 +3,7 @@ CORE VEBRI CI HMVC 2022
 #######################
 
 
-Fitur <br>
+Fitur
 1. Auth - Login - Register - Forgot Password
 2. Dahboard
 3. CRUD TEXT
