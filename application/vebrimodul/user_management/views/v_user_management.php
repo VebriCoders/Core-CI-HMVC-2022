@@ -174,7 +174,7 @@ foreach ($tampilData->result() as $data) { ?>
                         <label class="control-label"><b>Status</b></label>
                         <div class="input-group mar-btm">
                             <span class="input-group-addon"><i class="ti-check"></i></span>
-                            <select class="form-control selectpicker" name="is_active" value="<?php echo $data->is_active ?>">
+                            <select class="form-control" id="demo-chosen-select-<?php echo $data->id ?>" name="is_active" value="<?php echo $data->is_active ?>">
                                 <?php if ($data->is_active == '1') { ?>
                                     <option selected="selected" value="1">Aktif</option>
                                     <option value="0">Tidak Aktif</option>
@@ -234,6 +234,13 @@ foreach ($tampilData->result() as $data) { ?>
                 }
             }
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#demo-chosen-select-<?php echo $data->id ?>').chosen({
+                width: '100%'
+            });
+        })
     </script>
 
     <!--Moddal Hapus-->
@@ -359,7 +366,7 @@ foreach ($tampilData->result() as $data) { ?>
                     <label class="control-label"><b>Role Akses</b></label>
                     <div class="input-group mar-btm">
                         <span class="input-group-addon"><i class="ti-check"></i></span>
-                        <select class="form-control selectpicker" name="role_id">
+                        <select class="form-control" id="demo-chosen-select" name="role_id">
                             <option value="">--- Pilih Status ---</option>
                             <option value="1">Administrator</option>
                             <option value="2">User</option>
@@ -369,7 +376,7 @@ foreach ($tampilData->result() as $data) { ?>
                     <label class="control-label"><b>Status</b></label>
                     <div class="input-group mar-btm">
                         <span class="input-group-addon"><i class="ti-check"></i></span>
-                        <select class="form-control selectpicker" name="is_active">
+                        <select class="form-control" name="is_active">
                             <option value="">--- Pilih Status ---</option>
                             <option value="1">Aktif</option>
                             <option value="0">Tidak Aktif</option>

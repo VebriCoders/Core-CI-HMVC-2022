@@ -43,6 +43,12 @@
 <!--Bootstrap Select [ OPTIONAL ]-->
 <link href="<?php echo base_url('assets/admin-template/') ?>plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
 
+<!--Select2 [ OPTIONAL ]-->
+<link href="<?php echo base_url('assets/admin-template/') ?>plugins/select2/css/select2.min.css" rel="stylesheet">
+
+<!--Chosen [ OPTIONAL ]-->
+<link href="<?php echo base_url('assets/admin-template/') ?>plugins/chosen/chosen.min.css" rel="stylesheet">
+
 <!--DataTables [ OPTIONAL ]-->
 <link href="<?php echo base_url('assets/admin-template/') ?>plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
 <link href="<?php echo base_url('assets/admin-template/') ?>plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">

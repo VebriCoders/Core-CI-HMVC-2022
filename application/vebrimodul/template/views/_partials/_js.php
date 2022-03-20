@@ -23,6 +23,12 @@
 <!--Bootstrap Select [ OPTIONAL ]-->
 <script src="<?php echo base_url('assets/admin-template/') ?>plugins/bootstrap-select/bootstrap-select.min.js"></script>
 
+<!--Select2 [ OPTIONAL ]-->
+<script src="<?php echo base_url('assets/admin-template/') ?>plugins/select2/js/select2.min.js"></script>
+
+<!--Chosen [ OPTIONAL ]-->
+<script src="<?php echo base_url('assets/admin-template/') ?>plugins/chosen/chosen.jquery.min.js"></script>
+
 <!--DataTables [ OPTIONAL ]-->
 <script src="<?php echo base_url('assets/admin-template/') ?>plugins/datatables/media/js/jquery.dataTables.js"></script>
 <script src="<?php echo base_url('assets/admin-template/') ?>plugins/datatables/media/js/dataTables.bootstrap.js"></script>
@@ -31,10 +37,21 @@
 <!--Specify page [ SAMPLE ]-->
 <!-- <script src="<?php echo base_url('assets/admin-template/') ?>js/demo/form-file-upload.js"></script> -->
 <!-- <script src="<?php echo base_url('assets/admin-template/') ?>js/demo/dashboard.js"></script> -->
+<!-- <script src="<?php echo base_url('assets/admin-template/') ?>js/demo/form-component.js"></script> -->
 
 <script>
     $(document).ready(function() {
         $(".preloader").fadeOut();
+
+        // CHOSEN
+        // =================================================================
+        // Require Chosen
+        // http://harvesthq.github.io/chosen/
+        // =================================================================
+        // $('#demo-chosen-select').chosen();
+        $('#demo-chosen-select').chosen({
+            width: '100%'
+        });
     })
 </script>
 
